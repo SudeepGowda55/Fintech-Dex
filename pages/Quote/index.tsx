@@ -118,7 +118,7 @@ export default function QuoteView({
                     buyTokenInfo.decimals
                   )
                 ) *
-                  TOTAL TRANSACTION FEES +
+                  AFFILIATE_FEE +
                 " " +
                 buyTokenInfo.symbol
               : null}

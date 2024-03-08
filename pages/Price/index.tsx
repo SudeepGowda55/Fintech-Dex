@@ -211,7 +211,7 @@ export default function PriceView({
                   POLYGON_TOKENS_BY_SYMBOL[buyToken].decimals
                 )
               ) *
-                TOTAL TRANSACTION FEES +
+                AFFILIATE_FEE +
               " " +
               POLYGON_TOKENS_BY_SYMBOL[buyToken].symbol
             : null}
