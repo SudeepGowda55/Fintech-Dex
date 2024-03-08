@@ -3,6 +3,7 @@ import PriceView from "./Price";
 import QuoteView from "./Quote";
 import type { PriceResponse } from "./api/types";
 import { useAccount } from "wagmi";
+import Navbar from "@/utils/navbar";
 
 export default function Home() {
   const [tradeDirection, setTradeDirection] = useState("sell");
@@ -12,9 +13,8 @@ export default function Home() {
   const { address } = useAccount();
 
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24`}
-    >
+    <main className={`flex min-h-screen flex-col items-center justify-between p-24`}>
+      <Navbar />
       {finalize && price ? (
         <QuoteView
           takerAddress={address}
