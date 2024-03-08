@@ -123,7 +123,7 @@ export default function PriceView({
 
   return (
     <form>
-      <p className="text-md font-bold mb-2">Polygon Network</p>
+      <p className="text-md font-bold mb-2 text-white">Polygon Network</p>
 
       <div className="bg-slate-200 dark:bg-slate-800 p-4 rounded-md mb-3">
         <section className="mt-4 flex items-start justify-center">
